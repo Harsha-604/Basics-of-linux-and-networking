@@ -44,3 +44,9 @@ This command helps the user to make a new directory.
 mkdir stands for make directory.
 
 ![mkdir](images/mkdir.png)
+
+## The `echo` command
+
+This command prints the text.
+
+![echo command](images/echo.png)
