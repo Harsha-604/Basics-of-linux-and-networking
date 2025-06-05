@@ -50,3 +50,47 @@ mkdir stands for make directory.
 This command prints the text.
 
 ![echo command](images/echo.png)
+
+# File Hierarchy and User Management  
+
+## File Hierarchy
+
+## `/root`
+
++ The `/root` is the parent directory of all the directories in the system.
+
+![/root](images/root.png)
+
+## `/bin`
+
++ In linux all the commands which we use are files written in binary.All these commands are stored in the `/bin` folder inside `/root` directory.We can also copy or delete these files from the directory using `sudo`.
+
+![/bin output](images/bin.png)
+
+## `/sbin`
+
++ The `/sbin` also known as the super binary contains the commands that only the adminstrators use.Few example commands are `adduser`
+,`ifconfig`,`tcptraceroute` and many more.
+
+## `/boot`
+
++ The `/boot` directory stores all the boot files required when the system starts to boot.
+
+## `/etc`
+
++ The `/etc` directory stores all the system-wide configaration files and shell scripts.Only the root user can make changes in the `/etc` directory.  
++ In this directory we have a sub-directory for passwords i.e `/etc/passwd` which stores all the user information files.
++ The passwords are stored in `/etc/shadow` directory in a form of a hash code which can be accessed by using `sudo` command.
+
+![/etc/passwd output](images/etcpasswd.png)
+
+## User Management
+
++ Linux can operate with more than one user, each user will have a username, `home` directory and password.
+
+### To create a new user  
+
++ There are two commands :  
+    1.`adduser`
+    Syntax : `adduser <username>`  
+    2.`useradd`
