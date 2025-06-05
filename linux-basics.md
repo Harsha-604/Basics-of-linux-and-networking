@@ -55,9 +55,9 @@ This command prints the text.
 
 ## File Hierarchy
 
-## `/root`
+## `root`
 
-+ The `/root` is the parent directory of all the directories in the system.
++ The `root` is the parent directory of all the directories in the system.
 
 ![/root](images/root.png)
 
@@ -91,6 +91,47 @@ This command prints the text.
 ### To create a new user  
 
 + There are two commands :  
-    1.`adduser`
+    1.`adduser`  
     Syntax : `adduser <username>`  
-    2.`useradd`
+    2.`useradd`  
+    Syntax : `useradd <username>` 
++ When we create a user using the `useradd` command the system does not ask for the password for that user.We can add the password by using the `passwd` command.
+
+### Modifying a user
+
++ We can modify user settings by using `usermod` command.  
+![shell difference](images/shell.png)
++ As we can see in the above image user 'harsha'has a different shell w.r.to user 'test'.Now we can change the shell of a user by using this `usermod`command.  
+`sudo usermod test --shell /bin/bash`
++ After using the above command the shell of the test user is changed.  
+![same shell](images/shell1.png)  
+  
++ If we want to change the user name from 'test' to say suppose 'test1', We can do that by using `sudo usermod -l test1 test`  
+![user change](images/userchange.png)
+  
+## The `sudo` command
+
++ This is the most powerful commandin linux  with `sudo` we can do any changes in the system by becoming the root.
+
+## The `su` command
+
++ `su` stands for switch user. We can switch between user from the terminal, But for that we need to know the password.
++ If in case we do not know the password of the other user `sudo` command will help us.
+
+## The `userdel` command
+
+This command will delete a user from the system.For example lets try deleting 'test1' using `sudo userdel test1` . 
+![userdel output](images/userdel.png)
+The 'test1'user is deleted from the system.
+
+## The `groupadd` command
+
++ This command adds a group of users to the system in which there are different users.  
+`sudo groupadd groooop`:This creates a new group
++ For adding user to this group we can use the `-aG` tag along with `usermod` command.
+`sudo usermod -aG groooop mem1`:This adds new user into the group.  
+![useradded into group](images/mem1.png)
++ For example to remove a user from the group we use the following command  
++ `Syntax: sudo gpasswd -d <group_name>`  
++ `sudo gpasswd -d mem1 groooop`
+![user deleted](images/delgroup.png)
