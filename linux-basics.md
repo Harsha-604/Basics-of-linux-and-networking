@@ -133,5 +133,5 @@ The 'test1'user is deleted from the system.
 ![useradded into group](images/mem1.png)
 + For example to remove a user from the group we use the following command  
 + `Syntax: sudo gpasswd -d <group_name>`  
-+ `sudo gpasswd -d mem1 groooop`
++ `sudo gpasswd -d mem1 groooop`  
 ![user deleted](images/delgroup.png)
