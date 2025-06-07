@@ -86,3 +86,7 @@
 |Connection oriented|Connectionless|
 |More Reliable| Less Reliable|
 |Slower|Faster|
+
+### Three Way HandShake
+
+![Three Way HandShake](image/TWH.png)
