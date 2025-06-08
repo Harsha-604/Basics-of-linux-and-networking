@@ -59,7 +59,6 @@
 
 + IP : Internet Protocol
 + ICMP : Internet Control Message Protocol
-+ ARP : Address Resolution Protocol
 + OSPF,BGP,RIP : Routing protocols
 
 ## 4. Transport Layer :  
@@ -90,3 +89,87 @@
 ### Three Way HandShake
 
 ![Three Way HandShake](image/TWH.png)
+
+## 5.Session Layer
+
++ The Session Layer of the OSI Model is responsible for establishing, managing, and terminating of sessions.
++ A **session** is a continous exchange of information between two applications or systems.
+
+### Responsibilities
+
+1. Dialog Control
+2. Synchronization
+
+## 6. Pesentation Layer
+
++ The Presentation Layer of the OSI Model is responsible for **translaation, encryption/decryption, compression/decompression** of data from/to the application layer.
++ Common data formats handled are image(JPEG,PNG), video(MP4,AVI), text encodings(ASCII,UTF-8).
+
+### Responsibilities
+
+1. Translation
+2. Encryption/decryption
+3. Compression/decompression
+
+## 7.Application Layer
+
++ The Application Layer of the OSI Model is the top most layer and  is responsible for providing network services to the user or the application software by using different protocols.
+
+### Responsibilities
+
+1. File transfer
+2. Network virtualization
+3. Mail services
+4. Remote access
+
+## Real-Life Examples
+
+|**Layer**|**Protocols Used**|
+|:---:|:---|
+|Application|DNS(53),HTTPS(443),HTTP(80),FTP(20,21)|
+|Presentation|JPEG,MP4,ASCII,SCL/TLS|
+|Session|NetBIOS,RPC,SMB,PPTP|
+|Transport|TCP,UDP,SCTP,DCCP|
+|Network|IP,ICMP,IGMP,IPSec|
+|Data-Link|ARP,PPP,Ethernet|
+|Physical|RJ45,Fiber cable,Wi-Fi|
+
+![OSI Model](image/OSI.png)
+
+## TCP/IP Model
+
++ The TCP/IP Model designed by the U.S Department of Defence is a 4-Layer network communication model.
+
+|Layer|Name|
+|:---:|:---:|
+|1|Host-to-Network|
+|2|Internet|
+|3|Transport|
+|4|Application|
+
+#### Comparision of OSI to TCP/IP:
+
+![OSI_TCP/IP](image/OSI_TCP-IP.png)
+
+## 1.Host-to-Network Layer
+
++ This layer of TCP/IP Model is resposible for all the responsiblities of both the Physical and Data-Link layers of the OSI Model.
+
+## 2.Internet Layer
+
++ The Internet layer is same as the 'network'layer of the OSI model but with few added protocols.  
+
++ **Added protocols:**
+
+1. ARP : Address Resolution Protocol
+2. RARP: Reverse Address Resolution Protocol
+3. ICMP: Internet Control Message Protocol
+4. IGMP: Internet Group Message Protocol
+
+## 3.Transport Layer
+
++ This layer is same as the'transport' layer of teh OSI Model with one added protocol i.e. **SCTP: Stream Contol Transmission Protocol**.
+
+## 4.Application Layer:
+
+ This layer of TCP/IP Model is resposible for all the responsiblities of Session, Presentation andd the application layers of the OSI Model.
