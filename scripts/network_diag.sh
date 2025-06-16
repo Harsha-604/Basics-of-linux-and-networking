@@ -3,7 +3,7 @@ read -p "Enter Domain:" dom
 echo "Domain is:" $dom
 
 echo -e "\n IP Address:" 
-hostname -I
+host $dom
 
 echo -e "\nPinging" $dom ":"
 ping -c 4 $dom
