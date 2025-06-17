@@ -3,7 +3,7 @@ read -p "Enter Domain:" dom
 echo "Domain is:" $dom
 
 echo -e "\n IP Address:" 
-host $dom
+ping -c 1 $dom |awk -F '[()]' '/PING/{printf $2}'
 
 echo -e "\nPinging" $dom ":"
 ping -c 4 $dom
