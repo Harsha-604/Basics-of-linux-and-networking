@@ -17,7 +17,7 @@
 + `sudo  ufw allow 22` : This command allows Secure Shell.22 is the port number used by SSH  
 ![ufw-disable](imga/ufw-ssh.png)
 + `sudo ufw deny from <ip address>` :This command blocks the given IP Address.  
-+ `sudo ufw status numbered	`:This command gives all rules with numbers.  
++ `sudo ufw status numbered`:This command gives all rules with numbers.  
 ![ufw-disable](imga/ufw-statn.png)
 + `sudo ufw status verbose` : This command gives a detailed status.  
 ![ufw-disable](imga/ufw-verbose.png)
