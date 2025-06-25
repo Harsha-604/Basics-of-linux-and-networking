@@ -28,7 +28,7 @@
 + SYN Flag : Browser send a synchronization packet.
 + SYN+ACK Flag : Server acknowlwdges and synchronizes back.
 + ACK Flag : Browser acknowledges back.  
-**Note:**If `HTTPS` is used TLS Handshake is used.In this the browser and server exchange encryption keys,with this a secure cahnnel is created.  
+**Note:** If `HTTPS` is used TLS Handshake is used.In this the browser and server exchange encryption keys,with this a secure cahnnel is created.  
 
 ## Step 5 : HTTP GET Request
 
