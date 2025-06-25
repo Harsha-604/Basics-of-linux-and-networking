@@ -21,3 +21,28 @@
 ### If the IP address is not cached then:  
 
 ![DNS Resolution](img/DNS%20Resolution.png)
+
+## Step 4: TCP Handshake
+
++ After the browser receives the IP address it try to establish a Three way handshake.
++ SYN Flag : Browser send a synchronization packet.
++ SYN+ACK Flag : Server acknowlwdges and synchronizes back.
++ ACK Flag : Browser acknowledges back.  
+**Note:**If `HTTPS` is used TLS Handshake is used.In this the browser and server exchange encryption keys,with this a secure cahnnel is created.  
+
+## Step 5 : HTTP GET Request
+
+In this step the browser requests the server to send the details of the homepage for the domain.
+![HTTP GET Request](img/HTTP.png)
+
+## Step 6 : Server's Response
+
+After receveing the HTTP GET Request the server prepares a  'HTTP Response' and the `html` file of the websites homepage along with it.
+
+## Step 7 : Rendering of hompage
+
+The browser understands the HTML file, downloads images or any other refernce material and renders the hompage on the screen.
+
+## Summary :
+
+![summary](img/summary.png)
