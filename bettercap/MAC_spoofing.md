@@ -31,6 +31,6 @@ We can change the MAC address using `macchanger`
 + Step 8: Verify the MAC address change a command or bettercap:  
 `ip link show <interface>`  
 Verified via command:  
-![MAC2](images/MAC2.png)
+![MAC2](images/MAC2.png)  
 Verified via bettercap:  
 ![MAC3](images/MAC3.png)
